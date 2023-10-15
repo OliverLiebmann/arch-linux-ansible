@@ -1,0 +1,6 @@
+user:
+  name: oliver
+  full_name: "Oliver Liebmann"
+  primary_group: users
+  shell: /bin/zsh
+  country: "Austria"
