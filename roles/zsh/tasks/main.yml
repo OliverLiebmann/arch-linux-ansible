@@ -1,0 +1,7 @@
+- name: Install zsh
+  kewlfft.aur.aur:
+    use: paru
+    name:
+      - zsh
+      - oh-my-zsh-git
+    state: present
