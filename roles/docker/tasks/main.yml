@@ -1,0 +1,26 @@
+- name: Install programming tools
+  community.general.pacman:
+    name:
+      - docker
+      - docker-compose
+    state: present
+  become: true
+
+- name: Create privileged docker user group
+  ansible.builtin.group:
+    name: docker
+    state: present
+
+- name: Add privileged user to the docker user group
+  ansible.builtin.user:
+    name: "{{ user.name }}"
+    groups: docker
+    append: yes
+  become: true
+
+- name: Start and enable docker
+  ansible.builtin.service:
+    name: docker
+    state: started
+    enabled: yes
+  become: true
