@@ -1,0 +1,20 @@
+- name: Install programming tools
+  community.general.pacman:
+    name:
+      - jdk-openjdk
+      - nodejs
+      - npm
+      - pnpm
+      - rust
+      - go
+      - python
+    state: present
+  become: true
+
+- name: Install programming IDEs
+  kewlfft.aur.aur:
+    use: paru
+    name:
+      - intellij-idea-ultimate-edition
+      - code
+    state: present
