@@ -1,0 +1,23 @@
+- name: Set pacman.conf
+  ansible.builtin.template:
+    src: pacman.conf.j2
+    dest: /etc/pacman.conf
+    backup: no
+    owner: root
+    group: root
+    mode: 0644
+  become: true
+
+- name: Install pacman-contrib
+  community.general.pacman:
+    name:
+      - pacman-contrib
+    state: present
+  become: true
+
+- name: Start paccache timer
+  ansible.builtin.systemd:
+    name: paccache.timer
+    state: started
+    enabled: yes
+  become: true
