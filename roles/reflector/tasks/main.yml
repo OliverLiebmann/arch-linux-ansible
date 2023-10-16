@@ -9,10 +9,10 @@
   ansible.builtin.template:
     src: reflector.conf.j2
     dest: /etc/xdg/reflector/reflector.conf
-    backup: no
+    backup: false
     owner: root
     group: root
-    mode: 0644
+    mode: "0644"
   become: true
 
 - name: Start reflector service
@@ -25,5 +25,5 @@
   ansible.builtin.systemd:
     name: reflector.timer
     state: started
-    enabled: yes
+    enabled: true
   become: true
