@@ -1,3 +1,4 @@
+---
 - name: Install reflector
   community.general.pacman:
     name:

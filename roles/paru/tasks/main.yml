@@ -1,3 +1,4 @@
+---
 - name: Create the `aur_builder` user
   become: true
   ansible.builtin.user:

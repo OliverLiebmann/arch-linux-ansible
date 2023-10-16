@@ -1,3 +1,4 @@
+---
 - name: Set pacman.conf
   ansible.builtin.template:
     src: pacman.conf.j2

@@ -1,3 +1,4 @@
+---
 - name: Install programming tools
   community.general.pacman:
     name:
