@@ -16,5 +16,13 @@ plugins=(
     sudo
     ufw
 )
+
 ZSH_THEME="agnoster"
+
 source /usr/share/oh-my-zsh/oh-my-zsh.sh
+
+prompt_context() {
+  if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
+    prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
+  fi
+}
