@@ -1,5 +1,5 @@
 ---
-- name: Install programming tools
+- name: Install docker
   community.general.pacman:
     name:
       - docker
