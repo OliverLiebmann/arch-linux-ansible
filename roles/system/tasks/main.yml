@@ -1,0 +1,9 @@
+---
+- name: Install pacman
+  ansible.builtin.include_tasks: pacman.yml
+
+- name: Install paru
+  ansible.builtin.include_tasks: paru.yml
+
+- name: Install reflector
+  ansible.builtin.include_tasks: reflector.yml

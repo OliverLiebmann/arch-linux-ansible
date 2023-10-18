@@ -2,9 +2,7 @@
 - name: Post-Install Arch
   hosts: all
   roles:
-    - role: pacman
-    - role: reflector
-    - role: paru
+    - role: system
     - role: programming
     - role: docker
     - role: zsh
