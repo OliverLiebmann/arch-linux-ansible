@@ -1,0 +1,9 @@
+---
+- name: Install IntelliJ Idea
+  kewlfft.aur.aur:
+    use: paru
+    name:
+      - intellij-idea-ultimate-edition
+    state: present
+  become: true
+  become_user: aur_builder

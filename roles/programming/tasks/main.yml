@@ -1,21 +1,28 @@
 ---
-- name: Install programming tools
-  community.general.pacman:
-    name:
-      - jdk-openjdk
-      - nodejs
-      - npm
-      - pnpm
-      - rust
-      - go
-      - python
-    state: present
-  become: true
+- name: Install java
+  ansible.builtin.include_tasks: java.yml
+  when: packages.programming.java
 
-- name: Install programming IDEs
-  kewlfft.aur.aur:
-    use: paru
-    name:
-      - intellij-idea-ultimate-edition
-      - code
-    state: present
+- name: Install node
+  ansible.builtin.include_tasks: node.yml
+  when: packages.programming.node
+
+- name: Install go
+  ansible.builtin.include_tasks: go.yml
+  when: packages.programming.go
+
+- name: Install rust
+  ansible.builtin.include_tasks: rust.yml
+  when: packages.programming.rust
+
+- name: Install python
+  ansible.builtin.include_tasks: python.yml
+  when: packages.programming.python
+
+- name: Install intellij
+  ansible.builtin.include_tasks: intellij.yml
+  when: packages.programming.intellij
+
+- name: Install code
+  ansible.builtin.include_tasks: code.yml
+  when: packages.programming.code

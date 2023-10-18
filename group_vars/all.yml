@@ -5,3 +5,13 @@ user:
   primary_group: users
   shell: /bin/zsh
   country: "Austria"
+
+packages:
+  programming:
+    java: true
+    node: true
+    go: true
+    rust: true
+    python: true
+    intellij: true
+    code: true
