@@ -1,9 +1,0 @@
----
-- name: Install node
-  community.general.pacman:
-    name:
-      - nodejs
-      - npm
-      - pnpm
-    state: present
-  become: true

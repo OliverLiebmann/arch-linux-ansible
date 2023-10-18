@@ -1,8 +1,0 @@
----
-- name: Install java
-  community.general.pacman:
-    name:
-      - jdk-openjdk
-      - gradle
-    state: present
-  become: true

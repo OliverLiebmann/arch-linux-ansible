@@ -4,5 +4,4 @@
   roles:
     - role: system
     - role: user
-    - role: programming
     - role: docker

@@ -1,7 +1,0 @@
----
-- name: Install python
-  community.general.pacman:
-    name:
-      - python
-    state: present
-  become: true

@@ -1,7 +1,0 @@
----
-- name: Install go
-  community.general.pacman:
-    name:
-      - go
-    state: present
-  become: true
