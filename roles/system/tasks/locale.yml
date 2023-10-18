@@ -1,0 +1,19 @@
+---
+- name: Install english locale
+  community.general.locale_gen:
+    name: en_US.UTF-8
+    state: present
+
+- name: Install german locale
+  community.general.locale_gen:
+    name: de_AT.UTF-8
+    state: present
+
+- name: Set locale
+  ansible.builtin.template:
+    src: locale.conf.j2
+    dest: /etc/locale.conf
+    backup: false
+    owner: root
+    group: root
+    mode: "0644"

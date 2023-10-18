@@ -10,3 +10,6 @@
 
 - name: Install pipewire
   ansible.builtin.include_tasks: pipewire.yml
+
+- name: Install locale
+  ansible.builtin.include_tasks: locale.yml
