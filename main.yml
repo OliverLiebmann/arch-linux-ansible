@@ -3,6 +3,6 @@
   hosts: all
   roles:
     - role: system
+    - role: user
     - role: programming
     - role: docker
-    - role: zsh
