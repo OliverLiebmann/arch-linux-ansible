@@ -7,4 +7,3 @@
       - noto-fonts-extra
     state: present
   become: true
-
