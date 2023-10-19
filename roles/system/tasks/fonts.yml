@@ -1,0 +1,10 @@
+---
+- name: Install fonts
+  community.general.pacman:
+    name:
+      - noto-fonts
+      - noto-fonts-emoji
+      - noto-fonts-extra
+    state: present
+  become: true
+
