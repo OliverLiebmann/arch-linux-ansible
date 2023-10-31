@@ -9,13 +9,6 @@
     mode: "0644"
   become: true
 
-- name: Install pacman-contrib
-  community.general.pacman:
-    name:
-      - pacman-contrib
-    state: present
-  become: true
-
 - name: Start paccache timer
   ansible.builtin.systemd:
     name: paccache.timer

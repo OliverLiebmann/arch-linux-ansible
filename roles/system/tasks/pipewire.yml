@@ -1,17 +1,4 @@
 ---
-- name: Install pipewire
-  community.general.pacman:
-    name:
-      - pipewire
-      - pipewire-alsa
-      - pipewire-jack
-      - pipewire-pulse
-      - gst-plugin-pipewire
-      - libpulse
-      - wireplumber
-    state: present
-  become: true
-
 - name: Enable pipewire-pulse
   ansible.builtin.systemd:
     name: pipewire-pulse.service

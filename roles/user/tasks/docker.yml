@@ -1,12 +1,4 @@
 ---
-- name: Install docker
-  community.general.pacman:
-    name:
-      - docker
-      - docker-compose
-    state: present
-  become: true
-
 - name: Create privileged docker user group
   ansible.builtin.group:
     name: docker

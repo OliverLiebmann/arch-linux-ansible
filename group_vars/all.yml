@@ -5,3 +5,81 @@ user:
   primary_group: users
   shell: /bin/zsh
   country: "Austria"
+
+packages:
+
+  # Bluetooth
+  - bluez
+  - bluez-utils
+
+  # Fonts
+  - noto-fonts
+  - noto-fonts-emoji
+  - noto-fonts-extra
+
+  - pacman-contrib
+  - reflector
+
+  # Pipewire
+  - pipewire
+  - pipewire-alsa
+  - pipewire-jack
+  - pipewire-pulse
+  - gst-plugin-pipewire
+  - libpulse
+  - wireplumber
+
+  # Docker
+  - docker
+  - docker-compose
+
+  # Gnome
+  - gdm
+  - gnome-backgrounds
+  - gnome-color-manager
+  - gnome-console
+  - gnome-control-center
+  - gnome-disk-utility
+  - gnome-keyring
+  - gnome-session
+  - gnome-settings-daemon
+  - gnome-shell
+  - gnome-shell-extensions
+  - gnome-tweaks
+  - gvfs
+  - gvfs-afc
+  - gvfs-goa
+  - gvfs-google
+  - gvfs-gphoto2
+  - gvfs-mtp
+  - gvfs-nfs
+  - gvfs-smb
+  - loupe
+  - nautilus
+  - snapshot
+  - sushi
+  - tracker3-miners
+  - xdg-desktop-portal-gnome
+  - xdg-user-dirs-gtk
+
+  # Programming
+  - jdk-openjdk
+  - gradle
+  - nodejs
+  - npm
+  - pnpm
+  - rust
+  - go
+  - python
+  - intellij-idea-ultimate-edition
+  - code
+
+  # Zsh
+  - zsh
+  - oh-my-zsh-git
+
+  # Personal
+  - brave-bin
+  - discord
+  - spotify
+  - slack

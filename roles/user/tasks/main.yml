@@ -1,12 +1,6 @@
 ---
-- name: Install gnome
-  ansible.builtin.include_tasks: gnome.yml
-
 - name: Install zsh
   ansible.builtin.include_tasks: zsh.yml
-
-- name: Install programming tools
-  ansible.builtin.include_tasks: programming.yml
 
 - name: Install docker
   ansible.builtin.include_tasks: docker.yml
