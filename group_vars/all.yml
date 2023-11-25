@@ -22,11 +22,10 @@ packages:
 
   # Pipewire
   - pipewire
+  - pipewire-audio
   - pipewire-alsa
   - pipewire-jack
   - pipewire-pulse
-  - gst-plugin-pipewire
-  - libpulse
   - wireplumber
 
   # Docker
