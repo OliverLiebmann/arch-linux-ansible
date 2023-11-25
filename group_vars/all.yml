@@ -72,6 +72,8 @@ packages:
   - go
   - python
   - intellij-idea-ultimate-edition
+  - pycharm-professional
+  - webstorm
   - code
 
   # Zsh
